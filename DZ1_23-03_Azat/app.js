@@ -84,9 +84,12 @@ function moveBox(direction='') {
     }
 
     if (status) {
-        moveBox(direction)
+        setTimeout(recursion, 20)
     } else {
         start.style.display = 'block'
+    }
+    function recursion() {
+        moveBox(direction)
     }
 }
 
