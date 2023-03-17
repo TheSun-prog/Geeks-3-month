@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.both, .part1, .part2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+#action {
+    width: 100%;
+}
+.blockMain, .block1 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px solid;
+}
+.boxMain, .box1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.buttons button {
+    width: 50px;
+}
+.counter {
+    font-size: 40px;
+}
