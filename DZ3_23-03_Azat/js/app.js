@@ -26,8 +26,6 @@ tabsParent.onclick = event => {
     }
 }
 
-let index = 0
-
 const modal = document.querySelector('.modal')
 const modalTrigger = document.querySelector('.btn_white')
 const closeModalBtn = document.querySelector('.modal__close')
@@ -95,6 +93,8 @@ setClock('.timer', deadline)
 
 
 // ДЗ ПЕРВАЯ ЧАСТЬ
+
+let index = 0
 
 let autoScrollTab = setInterval(() => {
     hideTabContent()
