@@ -1,5 +1,4 @@
-// both 
-// ДО 97 СТРОКИ ЭТО СОВМЕЩЕННОЕ ДЗ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! (! - для того, чтобы заметили это сообщение)
+// both
 
 // HTML elements
 const boxMain = document.querySelector('.boxMain'),

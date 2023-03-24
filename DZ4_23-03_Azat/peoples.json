@@ -1,0 +1,22 @@
+{
+  "person1": {
+    "name": "Azat",
+    "age": 18
+  },
+  "person2": {
+    "name": "Alihan",
+    "age": 15
+  },
+  "person3": {
+    "name": "Dima",
+    "age": 25
+  },
+  "person4": {
+    "name": "Andrey",
+    "age": 30
+  },
+  "person5": {
+    "name": "Jack",
+    "age": 24
+  }
+}
