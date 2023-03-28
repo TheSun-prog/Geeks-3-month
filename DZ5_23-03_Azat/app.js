@@ -18,7 +18,7 @@ const convert = (elem, target1, target2) => {
                 target1.value = 0
                 target2.value = 0
             } else {
-                //  res[ 'elem.id - target1.id' ] -> res['usd-kgs']
+                //  res['elem.id'-'target1.id'] -> res['usd-kgs']
                 target1.value = elem.value * res[`${elem.id}-${target1.id}`]
                 target2.value = target1.value * res[`${target1.id}-${target2.id}`]
             }
