@@ -3,7 +3,6 @@ const usdInput = document.querySelector('#usd'),
     eurInput = document.querySelector('#eur')
 
 const convert = (elem, target1, target2) => {
-
     elem.oninput = () => {
 
         const req = new XMLHttpRequest()
@@ -12,7 +11,6 @@ const convert = (elem, target1, target2) => {
         setTimeout(() => req.send(), 0)
 
         req.onload = () => {
-
             const res = JSON.parse(req.responseText)
             if (elem.value === '') {
                 target1.value = 0
@@ -22,7 +20,6 @@ const convert = (elem, target1, target2) => {
                 target1.value = (elem.value * res[`${elem.id}-${target1.id}`]).toFixed(2)
                 target2.value = (target1.value * res[`${target1.id}-${target2.id}`]).toFixed(2)
             }
-
         }
     }
 }
@@ -30,5 +27,3 @@ const convert = (elem, target1, target2) => {
 convert(usdInput, kgsInput, eurInput)
 convert(eurInput, usdInput, kgsInput)
 convert(kgsInput, eurInput, usdInput)
-
-
